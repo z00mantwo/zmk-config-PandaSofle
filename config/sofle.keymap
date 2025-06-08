@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-/*
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -28,8 +27,6 @@
     acceleration-exponent = <1>;
     trigger-period-ms = <16>;
 };
-
-*/
 
 #define BASE 0
 #define LOWER 1
