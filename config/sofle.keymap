@@ -163,8 +163,8 @@
                         &trans       &trans       &trans       &trans        &trans  &trans  &trans    &trans    &trans   &trans
             >;
 
-//          sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
-            sensor-bindings = <&scroll_encoder>; 
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+//          sensor-bindings = <&scroll_encoder>;             // Fails? intended for different sensor?
         };
 
         adjust_layer {
