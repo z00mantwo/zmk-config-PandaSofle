@@ -28,6 +28,18 @@
     trigger-period-ms = <16>;
 };
 
+// Encoders
+
+&sensors { triggers-per-rotation = <30>; };
+
+&left_encoder { steps = <60>; };
+
+&right_encoder { steps = <60>; };
+
+&led_strip {
+    chain-length = <29>;
+};
+
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
