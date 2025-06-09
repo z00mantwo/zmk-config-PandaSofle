@@ -110,7 +110,7 @@
                         &trans       &trans       &trans       &trans        &trans  &trans  &trans    &trans    &trans   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
 
         };
 
