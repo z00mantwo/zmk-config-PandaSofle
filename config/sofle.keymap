@@ -95,6 +95,14 @@
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
             tap-ms = <100>;
         };
+
+        caps: caps {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS";
+            #binding-cells = <0>;
+            continue-list = <POUND MINUS BACKSPACE UNDERSCORE>;
+        };
+
     };
 
    // Activate ADJUST layer by pressing raise and lower
