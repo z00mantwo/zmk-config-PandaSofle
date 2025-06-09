@@ -12,9 +12,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include <dt-bindings/led/led.h>
-&led_strip {
-    chain-length = <29>;
-};
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
