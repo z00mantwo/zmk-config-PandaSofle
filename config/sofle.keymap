@@ -228,7 +228,7 @@
                         &trans       &trans       &trans       &trans        &trans  &trans  &trans    &trans    &trans   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
 //          sensor-bindings = <&scroll_encoder>;             // Fails? intended for different sensor?
         };
 
