@@ -29,7 +29,7 @@
     trigger-period-ms = <16>;
 };
 
-// Encoders
+// Encoders. Don't use. Changes char spacing when using with arrow keys.
 //&sensors { triggers-per-rotation = <30>; };
 //&left_encoder { steps = <60>; };
 //&right_encoder { steps = <60>; };
