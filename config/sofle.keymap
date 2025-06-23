@@ -109,8 +109,8 @@
             bindings =
                 <&macro_tap>,
                 <&kp C_AL_CALCULATOR>,
-                <&macro_pause_for_release>;
-
+                <&macro_pause_for_release>
+            ;
             label = "CALC_MACRO";
             tap-ms = <200>;
         };
@@ -185,6 +185,7 @@
             flavor = "balanced";
             bindings = <&calc_macro>, <&kp>;
         };
+
     };
 
     // Activate ADJUST layer by pressing raise and lower
@@ -272,7 +273,7 @@
 &bt BT_CLR          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                   &calc_behavior                &trans         &mt RC(KP_DIVIDE) KP_DIVIDE  &mt RC(KP_MULTIPLY) KP_MULTIPLY  &mt RC(KP_MINUS) KP_MINUS   &kp DEL
 &ext_power EP_TOG   &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &none                &kp KP_N7      &kp KP_NUMBER_8              &kp KP_NUMBER_9                  &mt RC(KP_PLUS) KP_PLUS     &kp BSPC
 &out OUT_TOG        &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                   &none                &kp KP_N4      &kp KP_NUMBER_5              &kp KP_NUMBER_6                  &kp BACKSPACE               &none 
-&calc_behavior      &none           &none           &none           &none           &none           &rgb_ug RGB_TOG &none   &kp KP_DOT           &kp KP_N1      &kp KP_N2                    &kp KP_NUMBER_3                  &none                       &none s
+&calc_behavior      &none           &none           &none           &none           &none           &rgb_ug RGB_TOG &none   &kp KP_DOT           &kp KP_N1      &kp KP_N2                    &kp KP_NUMBER_3                  &none                       &none
                     &trans          &trans          &trans          &trans          &trans          &trans                  &trans               &trans         &trans                       &trans                           &trans                      &trans
             >;
 
