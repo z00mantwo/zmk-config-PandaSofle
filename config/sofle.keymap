@@ -41,72 +41,37 @@
 #define ADJUST 3
 #define NUMBERS 4
 
+&nice_view_spi {
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;  // use D0 (008) for CS niceview + rgb
+};
+
 / {
 
-    macros {
-        flash_macro: flash_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bootloader>;
-        };
-        
-        // System and Power
-        tm: tm {
-            label = "TASK_MANAGER";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL &kp LSHFT>
-                , <&macro_tap &kp ESC>
-                , <&macro_release &kp LCTRL &kp LSHFT>
-                ;
-        };
-        cad: cad{
-            label = "CTRL_ALT_DEL";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL &kp LALT &kp DEL>
-                , <&macro_release &kp LCTRL &kp LALT &kp DEL>
-                ;
-        };
-        slp: slp {
-            label = "SLEEP";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LGUI>
-                , <&macro_tap &kp U &kp S>
-                ;
-        };
-        rst: rst {
-            label = "RESTART";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LGUI>
-                , <&macro_tap &kp U &kp R>
-                ;
-        };
-        off: off {
-            label = "SHUTDOWN";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LGUI>
-                , <&macro_tap &kp U &kp U>
-                ;
-        };
-
-    };
-
     behaviors {
+        fast_encoder: fast_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&macro_fast_vol_dn>, <&macro_fast_vol_up>;
+        };        
+
+        rgb_encoder_bri: rgb_encoder_bri {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRD>, <&rgb_ug RGB_BRI>;
+        };
+
+        rgb_encoder_hu: rgb_encoder_hu {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_HUD>, <&rgb_ug RGB_HUI>;
+        };
+
+        rgb_encoder_sa: rgb_encoder_sa {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_SAD>, <&rgb_ug RGB_SAI>;
+        };
+
         lang_switch: Lang_Switch {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -169,6 +134,96 @@
 
     };
 
+    macros {
+
+        macro_fast_vol_up: macro_fast_vol_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&kp C_VOL_UP &kp C_VOL_UP>;
+        };
+
+        macro_fast_vol_dn: macro_fast_vol_dn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&kp C_VOL_DN &kp C_VOL_DN>;
+        };
+
+        NTIL: NTIL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N4>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        flash_macro: flash_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bootloader>;
+        };
+        
+        // System and Power
+        tm: tm {
+            label = "TASK_MANAGER";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LSHFT>
+                , <&macro_tap &kp ESC>
+                , <&macro_release &kp LCTRL &kp LSHFT>
+                ;
+        };
+        cad: cad{
+            label = "CTRL_ALT_DEL";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LALT &kp DEL>
+                , <&macro_release &kp LCTRL &kp LALT &kp DEL>
+                ;
+        };
+        slp: slp {
+            label = "SLEEP";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LGUI>
+                , <&macro_tap &kp U &kp S>
+                ;
+        };
+        rst: rst {
+            label = "RESTART";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LGUI>
+                , <&macro_tap &kp U &kp R>
+                ;
+        };
+        off: off {
+            label = "SHUTDOWN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LGUI>
+                , <&macro_tap &kp U &kp U>
+                ;
+        };
+
+    };
+
     // Activate ADJUST layer by pressing raise and lower
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -196,8 +251,10 @@
 &kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B      &kp C_MUTE &none      &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                  &kp LGUI &kp LALT &kp LCTRL &mo LOWER  &kp RET    &kp SPACE  &mo RAISE  &kp RCTRL &kp RALT  &kp RGUI
             >;
-
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp PG_UP PG_DN>;
+            // sensor-bindings = <&rgb_encoder_bri &inc_dec_kp PG_UP PG_DN>;
+            // sensor-bindings = <&rgb_encoder_hu &rgb_encoder_sa>;
+            // sensor-bindings = <&fast_encoder &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
