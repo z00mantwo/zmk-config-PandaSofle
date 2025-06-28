@@ -92,6 +92,9 @@
     pinctrl-names = "default", "sleep";
     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;  // use D0 (008) for CS niceview + rgb
 };
+&xiao_i2c {
+    status = "disabled";
+};
 
 / {
 
