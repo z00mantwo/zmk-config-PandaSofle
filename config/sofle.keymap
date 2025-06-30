@@ -340,7 +340,8 @@
         };
     };
 
-    # https://github.com/badjeff/zmk-feature-split-esb
+    // ZMK ESB Split Transport
+    // https://github.com/badjeff/zmk-feature-split-esb
     esb_split {
         compatible = "zmk,esb-split";
         // These are arbitrary default addresses. In end user products
