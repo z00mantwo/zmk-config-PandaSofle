@@ -34,6 +34,7 @@ manifest:
       remote: m165437 #new entry
       revision: main #new entry
 
+    # ZMK ESB Split Transport
     # https://github.com/badjeff/zmk-feature-split-esb
     - name: zmk-feature-split-esb
       remote: badjeff
