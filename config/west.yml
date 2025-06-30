@@ -13,7 +13,13 @@ manifest:
     # https://github.com/M165437/nice-view-gem
     - name: m165437 #new entry
       url-base: https://github.com/M165437 #new entry  
-      
+
+    # https://github.com/badjeff/zmk-feature-split-esb
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: nrfconnect
+      url-base: https://github.com/nrfconnect    
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -27,6 +33,20 @@ manifest:
     - name: nice-view-gem #new entry
       remote: m165437 #new entry
       revision: main #new entry
-      
+
+    # https://github.com/badjeff/zmk-feature-split-esb
+    - name: zmk-feature-split-esb
+      remote: badjeff
+      revision: main  
+    - name: sdk-nrf
+      remote: nrfconnect
+      revision: v2.6.4 # zephyr v3.5.99
+      path: nrf
+    - name: nrfxlib
+      remote: nrfconnect
+      revision: v2.6.4
+      repo-path: sdk-nrfxlib
+      path: nrfxlib
+
   self:
     path: config
