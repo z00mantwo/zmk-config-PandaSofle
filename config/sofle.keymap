@@ -41,9 +41,9 @@
 };
 
 // Encoders. Don't use. Changes char spacing when using with arrow keys.
-//&sensors { triggers-per-rotation = <30>; };
-//&left_encoder { steps = <60>; };
-//&right_encoder { steps = <60>; };
+&sensors { triggers-per-rotation = <30>; };
+//&left_encoder { steps = <30>; };
+//&right_encoder { steps = <30>; };
 //&led_strip { chain-length = <29>; };
 
 #define BASE 0
