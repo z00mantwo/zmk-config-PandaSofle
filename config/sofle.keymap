@@ -301,7 +301,7 @@
         raise_layer {
             display-name = "Raise";
 // ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                | BT6  |      |       |      |       |       |
+// | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
 // |       | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
 // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
 // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
@@ -320,7 +320,7 @@
 
         adjust_layer {
 // ----------------------------------------------------------------------------------------------------------------------------
-// | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  | BT6  |      |       |      |       |       |
+// | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
 // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
 // |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
 // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
@@ -329,7 +329,7 @@
             bindings = <
 &tog 3                &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &kp C_AL_CALC        &trans           &mt RC(KP_DIVIDE) KP_DIVIDE  &mt RC(KP_MULTIPLY) KP_MULTIPLY  &mt RC(KP_MINUS) KP_MINUS   &kp DEL
 &bt BT_CLR            &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &kp PG_UP            &kp KP_N7        &kp KP_NUMBER_8              &kp KP_NUMBER_9                  &mt RC(KP_PLUS) KP_PLUS     &kp BSPC
-&trans                &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &rgb_ug RGB_EFR                         &kp PG_DN            &kp KP_N4        &kp KP_NUMBER_5              &kp KP_NUMBER_6                  &none                       &none 
+&soft_off             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &rgb_ug RGB_EFR                         &kp PG_DN            &kp KP_N4        &kp KP_NUMBER_5              &kp KP_NUMBER_6                  &none                       &none 
 &kp C_AL_MY_COMPUTER  &kp K_AGAIN     &kp K_UNDO      &kp K_CUT       &kp K_COPY      &kp K_PASTE     &rgb_ug RGB_TOG &none   &kp KP_DOT           &kp KP_N1        &kp KP_N2                    &kp KP_NUMBER_3                  &none                       &none
                                       &trans          &trans          &trans          &trans          &trans          &trans  &trans               &kp KP_NUMBER_0  &kp KP_DOT                   &kp KP_ENTER                         
             >;
