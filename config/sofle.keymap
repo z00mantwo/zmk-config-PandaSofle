@@ -41,7 +41,7 @@
 };
 
 // Encoders. Don't use. Changes char spacing when using with arrow keys.
-&sensors { triggers-per-rotation = <22>; };
+//&sensors { triggers-per-rotation = <22>; };
 //&left_encoder { steps = <30>; };
 //&right_encoder { steps = <30>; };
 //&led_strip { chain-length = <29>; };
@@ -50,7 +50,6 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
-#define NUMBERS 4
 
 // Setup of CS pin from nice!view display.
 &nice_view_spi {
