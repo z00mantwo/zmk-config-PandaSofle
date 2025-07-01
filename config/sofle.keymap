@@ -192,7 +192,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-/*
 	bl: layertap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYERTAP";
@@ -202,7 +201,6 @@
             flavor = "tap-preferred";
             bindings = <&to>, <&kp>;
         };
-*/
 
     };
 
@@ -399,7 +397,7 @@
 // |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
 // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
 //                    |         |         |         |         |         | |      |      |      |       |      |
-            display-nmame = "Adjust";
+            display-name = "Adjust";
             bindings = <
 &tog ADJUST           &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &kp C_AL_CALC        &trans           &mt RC(KP_DIVIDE) KP_DIVIDE  &mt RC(KP_MULTIPLY) KP_MULTIPLY  &mt RC(KP_MINUS) KP_MINUS   &kp DEL
 &bt BT_CLR            &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &kp PG_UP            &kp KP_N7        &kp KP_NUMBER_8              &kp KP_NUMBER_9                  &mt RC(KP_PLUS) KP_PLUS     &kp BSPC
