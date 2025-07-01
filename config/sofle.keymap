@@ -66,12 +66,12 @@
 
     behaviors {
 
-		switch_tasks: switch-tasks {
-			compatible = "zmk,behavior-sensor-rotate";
-			label = "SWITCH_TASKS";
-			#sensor-binding-cells = <0>;
-			bindings = <&tasks_forward>, <&tasks_backward>;
-		};
+	switch_tasks: switch-tasks {
+		compatible = "zmk,behavior-sensor-rotate";
+		label = "SWITCH_TASKS";
+		#sensor-binding-cells = <0>;
+		bindings = <&tasks_forward>, <&tasks_backward>;
+	};
 
         fast_encoder: fast_encoder {
             compatible = "zmk,behavior-sensor-rotate";
@@ -109,11 +109,28 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <180>;
             flavor = "tap-preferred";
+        };
+        hs: homerow_shifts {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_SHIFTS";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+        };
+        hsl: homerow_shifts_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_SHIFTS_LAYER";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&to>;
         };
 
         ltq: ltq {
@@ -156,6 +173,25 @@
             label = "CAPS";
             #binding-cells = <0>;
             continue-list = <POUND MINUS BACKSPACE UNDERSCORE>;
+        };
+
+	td: tapdance {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPDANCE";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+	bl: layertap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYERTAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&to>, <&kp>;
         };
 
     };
