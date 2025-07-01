@@ -314,7 +314,7 @@
                       &trans       &trans       &trans       &trans       &trans        &trans   &trans  &trans          &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp UP DOWN>,<&rgb_encoder_bri>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>,<&rgb_encoder_sa>;
 //          sensor-bindings = <&scroll_encoder>;             // Fails? intended for different sensor?
         };
 
