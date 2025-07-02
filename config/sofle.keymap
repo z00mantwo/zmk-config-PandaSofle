@@ -178,6 +178,12 @@
             //tap-ms = <100>;
             tap-ms = <30>;
         };
+        scroll_rotation: sensor_rotation_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <30>;
+        };
 
         caps: caps {
             compatible = "zmk,behavior-caps-word";
@@ -336,7 +342,7 @@
 &kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B      &kp C_MUTE &kp HOME   &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                  &kp LGUI &kp LALT &kp LCTRL &mo LOWER  &kp RET    &kp SPACE  &mo RAISE  &kp RCTRL &kp RALT  &kp RGUI
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>,<&inc_dec_cp SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>,<&scroll_rotation MOVE_DOWN MOVE_UP>;
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>,<&inc_dec_cp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_cp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
             //sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &scroll_encoder>;
