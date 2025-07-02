@@ -28,21 +28,25 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  //  600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
-&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+//&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+//&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 // Emulates mouse scrolling
+/*
 &msc {
     acceleration-exponent = <1>;      // 0
     time-to-max-speed-ms = <100>;       // 300
     delay-ms = <0>;                   // 0
 };
+*/
 // Emulates mouse movement
+/*
 &mmv {
     time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
     trigger-period-ms = <16>;
 };
+*/
 
 // Encoders. Don't use. Changes char spacing when using with arrow keys.
 //&sensors { triggers-per-rotation = <22>; };
