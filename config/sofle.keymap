@@ -196,25 +196,25 @@
 
     macros {
 
-		tasks_forward: tasks-forward {
-			label = "TAKS_FORWARD";
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <&macro_press   &kp LALT>,
-				   <&macro_tap     &kp TAB>,
-				   <&macro_release &kp LALT>;
-		};
+	tasks_forward: tasks-forward {
+		label = "TAKS_FORWARD";
+		compatible = "zmk,behavior-macro";
+		#binding-cells = <0>;
+		bindings = <&macro_press   &kp LALT>,
+			   <&macro_tap     &kp TAB>,
+			   <&macro_release &kp LALT>;
+	};
 
-		tasks_backward: tasks-backward {
-			label = "TAKS_BACKWARD";
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <&macro_press   &kp LALT>,
-				   <&macro_press   &kp LSHIFT>,
-				   <&macro_tap     &kp TAB>,
-				   <&macro_release &kp LSHIFT>,
-				   <&macro_release &kp LALT>;
-		};
+	tasks_backward: tasks-backward {
+		label = "TAKS_BACKWARD";
+		compatible = "zmk,behavior-macro";
+		#binding-cells = <0>;
+		bindings = <&macro_press   &kp LALT>,
+			   <&macro_press   &kp LSHIFT>,
+			   <&macro_tap     &kp TAB>,
+			   <&macro_release &kp LSHIFT>,
+			   <&macro_release &kp LALT>;
+	};
 
         macro_fast_vol_up: macro_fast_vol_up {
             compatible = "zmk,behavior-macro";
@@ -332,8 +332,8 @@
 &kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B      &kp C_MUTE &kp HOME   &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                  &kp LGUI &kp LALT &kp LCTRL &mo LOWER  &kp RET    &kp SPACE  &mo RAISE  &kp RCTRL &kp RALT  &kp RGUI
             >;
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_cp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_cp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &scroll_encoder>;
             //sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp PG_UP PG_DN>;
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_cp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
             // sensor-bindings = <&rgb_encoder_bri &inc_dec_kp PG_UP PG_DN>;
