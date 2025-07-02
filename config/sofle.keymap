@@ -332,7 +332,7 @@
 &kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B      &kp C_MUTE &kp HOME   &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                  &kp LGUI &kp LALT &kp LCTRL &mo LOWER  &kp RET    &kp SPACE  &mo RAISE  &kp RCTRL &kp RALT  &kp RGUI
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&inc_dec_cp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>,<&inc_dec_cp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_cp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
             //sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &scroll_encoder>;
             //sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp PG_UP PG_DN>;
@@ -360,8 +360,8 @@
                       &trans    &trans      &trans    &trans    &trans     &trans   &trans  &trans   &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
-            //sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>, <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>,<&inc_dec_kp UP DOWN>;
+            //sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>,<&inc_dec_kp UP_ARROW DOWN_ARROW>;
             //sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
 
         };
