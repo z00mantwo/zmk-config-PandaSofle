@@ -365,7 +365,8 @@
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&scroll_rotation MOVE_DOWN MOVE_UP>;
-	// Works
+
+            // Works
             //sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp PG_UP PG_DN>;		// Works
         };
 
@@ -456,7 +457,7 @@
                                         &trans           &trans           &trans           &trans           &trans             &trans  &trans         &kp KP_NUMBER_0  &kp KP_DOT                   &kp KP_ENTER
             >;
 
-            sensor-bindings = <&rgb_encoder_bri>, <&rgb_encoder_hu>;
+            sensor-bindings = <&switch_tasks>, <&rgb_encoder_hu>;
 
             //sensor-bindings = <&rgb_encoder &scroll_encoder>;
         };
