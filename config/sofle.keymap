@@ -363,11 +363,11 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
                 <&scroll_rotation MOVE_DOWN MOVE_UP>;
 
             // Works
-            //sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp PG_UP PG_DN>;		// Works
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&inc_dec_kp PG_UP PG_DN>;		// Works
         };
 
         lower_layer {
