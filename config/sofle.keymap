@@ -458,7 +458,6 @@
             >;
 
             sensor-bindings = <&switch_tasks>, <&rgb_encoder_hu>;
-
             //sensor-bindings = <&rgb_encoder &scroll_encoder>;
         };
     };
