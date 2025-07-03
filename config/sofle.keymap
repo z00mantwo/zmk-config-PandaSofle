@@ -139,7 +139,7 @@
             quick-tap-ms = <180>;
         };
 
-        as: auto_shift {
+        auto_shift: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "AUTO_SHIFT";
             bindings = <&kp>, <&kp>;
@@ -181,7 +181,7 @@
             continue-list = <POUND MINUS BACKSPACE UNDERSCORE>;
         };
 
-        td: tapdance {
+        tapdance: tapdance {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPDANCE";
             #binding-cells = <2>;
@@ -283,7 +283,7 @@
                 <&kp LCTRL &kp LALT &kp DEL>;
         };
 
-        sleep: slp {
+        sleep: sleep {
             label = "SLEEP";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -298,7 +298,7 @@
                 <&kp U &kp S>;
         };
 
-        restart: rst {
+        restart: restart {
             label = "RESTART";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -313,7 +313,7 @@
                 <&kp U &kp R>;
         };
 
-        shutdown: off {
+        shutdown: shutdown {
             label = "SHUTDOWN";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
