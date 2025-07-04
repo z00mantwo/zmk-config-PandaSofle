@@ -24,28 +24,26 @@ include:
   #  #nice_oled
   #  snippet: studio-rpc-usb-uart
   #  cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
-  - board: nice_nano_v2
-    shield: sofle_left nice_view_adapter nice_view
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+  #- board: nice_nano_v2
+  #  shield: sofle_left nice_view_adapter nice_view
+  #  snippet: studio-rpc-usb-uart
+  #  cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
   - board: nice_nano_v2
     shield: sofle_left nice_view_adapter nice_view_gem 
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
   - board: nice_nano_v2
-    ID: test
     shield: sofle_left nice_view_adapter nice_view 
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN=y -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_LV_FONT_DEFAULT_MONTSERRAT_26=y
   #- board: nice_nano_v2
   #  shield: sofle_right 
   #  #nice_oled
-  - board: nice_nano_v2
-    shield: sofle_right nice_view_adapter nice_view
+  #- board: nice_nano_v2
+  #  shield: sofle_right nice_view_adapter nice_view
   - board: nice_nano_v2
     shield: sofle_right nice_view_adapter nice_view_gem
   - board: nice_nano_v2
-    ID: test2
     shield: sofle_right nice_view_adapter nice_view
     cmake-args: -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN=y -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_LV_FONT_DEFAULT_MONTSERRAT_26=y    
   - board: nice_nano_v2
