@@ -35,7 +35,7 @@ include:
   - board: nice_nano_v2
     shield: sofle_left nice_view_adapter nice_view 
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN=y -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_LV_FONT_DEFAULT_MONTSERRAT_26=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN=y -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_LV_FONT_DEFAULT_MONTSERRAT_26=y -DCONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE=y
     artifact-name: sofle_left nice_view_adapter nice_view-nice_nano_v2-zmk-olddisplay
   #- board: nice_nano_v2
   #  shield: sofle_right 
@@ -46,7 +46,7 @@ include:
     shield: sofle_right nice_view_adapter nice_view_gem
   - board: nice_nano_v2
     shield: sofle_right nice_view_adapter nice_view
-    cmake-args: -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN=y -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_LV_FONT_DEFAULT_MONTSERRAT_26=y  
+    cmake-args: -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN=y -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_LV_FONT_DEFAULT_MONTSERRAT_26=y -DCONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE=y 
     artifact-name: sofle_right nice_view_adapter nice_view-nice_nano_v2-zmk-olddisplay
   - board: nice_nano_v2
     shield: settings_reset
