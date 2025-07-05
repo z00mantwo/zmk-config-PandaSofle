@@ -493,9 +493,7 @@
                                        &trans           &trans           &trans           &trans           &trans             &trans  &trans         &kp KP_NUMBER_0  &kp KP_DOT                   &kp KP_ENTER
             >;
 
-            sensor-bindings = <&rgb_encoder_bri>, <&rgb_encoder_hu>;
-
-            //sensor-bindings = <&rgb_encoder &scroll_encoder>;
+            sensor-bindings = <&rgb_encoder_bri>, <&rgb_encoder_hu>;             //sensor-bindings = <&rgb_encoder &scroll_encoder>;
         };
 
         numpad_layer {
