@@ -513,7 +513,7 @@
             bindings = <
 &tog NUMPAD            &trans           &trans           &trans           &trans           &trans                                      &kp C_AL_CALC  &kp LOCKING_NUM  &mt RC(KP_DIVIDE) KP_DIVIDE  &mt RC(KP_MULTIPLY) KP_MULTIPLY  &mt RC(KP_MINUS) KP_MINUS  &kp DEL
 &tog NUMPAD            &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                             &kp PG_UP      &kp KP_N7        &kp KP_NUMBER_8              &kp KP_NUMBER_9                  &mt RC(KP_PLUS) KP_PLUS    &kp BSPC
-&kp C_AL_FILE_BROWSER  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &rgb_ug RGB_EFR                             &kp PG_DN      &kp KP_N4        &kp KP_NUMBER_5              &kp KP_NUMBER_6                  &trans                     &trans
+&kp C_AL_MY_COMPUTER   &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &rgb_ug RGB_EFR                             &kp PG_DN      &kp KP_N4        &kp KP_NUMBER_5              &kp KP_NUMBER_6                  &trans                     &trans
 &trans                 &kp K_AGAIN      &kp K_UNDO       &kp K_CUT        &kp K_COPY       &kp K_PASTE      &rgb_ug RGB_TOG    &none   &kp KP_DOT     &kp KP_N1        &kp KP_N2                    &kp KP_NUMBER_3                  &trans                     &trans
                                         &trans           &trans           &trans           &trans           &trans             &trans  &trans         &kp KP_NUMBER_0  &kp KP_DOT                   &kp KP_ENTER
             >;
