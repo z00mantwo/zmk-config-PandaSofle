@@ -1,0 +1,267 @@
+layout: {zmk_keyboard: sofle}
+layers:
+  Default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DEL, TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, '`', A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
+    X, C, V, B, '&mkp MCLK', MUTE, N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, Lower, RET, SPACE, Raise, RCTRL, RALT, RGUI]
+  Lower:
+  - {t: NumPad, h: toggle}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - OUT TOG
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - F12
+  - '&tm'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - '|'
+  - {t: ▽, type: trans}
+  - '='
+  - '-'
+  - +
+  - '{'
+  - '}'
+  - RET
+  - RET
+  - '['
+  - ']'
+  - ;
+  - ':'
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Raise:
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DEL
+  - {t: ▽, type: trans}
+  - INS
+  - PSCRN
+  - CMENU
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PG UP
+  - HOME
+  - UP
+  - END
+  - '0'
+  - BSPC
+  - '&tm'
+  - LALT
+  - LCTRL
+  - LSHFT
+  - {t: ▽, type: trans}
+  - CLCK
+  - PG DN
+  - LEFT
+  - DOWN
+  - RIGHT
+  - DEL
+  - BSPC
+  - {t: ▽, type: trans}
+  - AGAIN
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - RET
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Adjust:
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - AL CALC
+  - {t: ▽, type: trans}
+  - {t: KP DIVIDE, h: Ctl+KP DIVIDE}
+  - {t: KP MULTIPLY, h: Ctl+KP MULTIPLY}
+  - {t: KP MINUS, h: Ctl+KP MINUS}
+  - DEL
+  - BT CLR
+  - RGB HUD
+  - RGB HUI
+  - RGB SAD
+  - RGB SAI
+  - RGB EFF
+  - PG UP
+  - KP 7
+  - KP 8
+  - KP 9
+  - {t: KP PLUS, h: Ctl+KP PLUS}
+  - BSPC
+  - '&soft_off'
+  - RGB BRD
+  - RGB BRI
+  - ''
+  - ''
+  - RGB EFR
+  - PG DN
+  - KP 4
+  - KP 5
+  - KP 6
+  - ''
+  - ''
+  - AL MY COMPUTER
+  - AGAIN
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - RGB TOG
+  - ''
+  - KP DOT
+  - KP 1
+  - KP 2
+  - KP 3
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - KP 0
+  - KP DOT
+  - KP ENTER
+  NumPad:
+  - {t: NumPad, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - AL CALC
+  - LOCKING NUM
+  - {t: KP DIVIDE, h: Ctl+KP DIVIDE}
+  - {t: KP MULTIPLY, h: Ctl+KP MULTIPLY}
+  - {t: KP MINUS, h: Ctl+KP MINUS}
+  - DEL
+  - {t: NumPad, h: toggle}
+  - RGB HUD
+  - RGB HUI
+  - RGB SAD
+  - RGB SAI
+  - RGB EFF
+  - PG UP
+  - KP 7
+  - KP 8
+  - KP 9
+  - {t: KP PLUS, h: Ctl+KP PLUS}
+  - BSPC
+  - AL MY COMPUTER
+  - RGB BRD
+  - RGB BRI
+  - ''
+  - ''
+  - RGB EFR
+  - PG DN
+  - KP 4
+  - KP 5
+  - KP 6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - AGAIN
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - RGB TOG
+  - ''
+  - KP DOT
+  - KP 1
+  - KP 2
+  - KP 3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 0
+  - KP DOT
+  - KP ENTER
+combos:
+- p: [12, 13]
+  k: ESCAPE
+- p: [15, 16]
+  k: '['
+- p: [19, 20]
+  k: ']'
+- p: [27, 28]
+  k: (
+- p: [31, 32]
+  k: )
+- p: [39, 40]
+  k: '{'
+- p: [46, 45]
+  k: '}'
+- p: [17, 18]
+  k: \
+- p: [29, 30]
+  k: '|'
