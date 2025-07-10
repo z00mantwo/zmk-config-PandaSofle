@@ -61,8 +61,8 @@
 / {
     wired_split {
         compatible = "zmk,wired-split";
-        //device = <&uart0>;
-        device = <&xiao_serial>;
+        device = <&uart0>;
+        //device = <&xiao_serial>;        // devicetree error: /wired_split: undefined node label 'xiao_serial'
     };
 };
 
