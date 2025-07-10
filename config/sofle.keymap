@@ -56,7 +56,7 @@
     trigger-period-ms = <16>;
 };
 
-// 
+// ZMK only supports full duplex, 2 wire serial. Sofle board is setup for half duplex, 1 wire.
 // {
 //    wired_split {
 //        compatible = "zmk,wired-split";
