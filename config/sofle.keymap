@@ -59,6 +59,13 @@
 };
 
 / {
+    wired_split {
+        compatible = "zmk,wired-split";
+        device = <&xiao_serial>;
+    };
+};
+
+/ {
     behaviors {
         Shift_Enter: Shift_Enter {
             compatible = "zmk,behavior-hold-tap";
@@ -535,6 +542,7 @@
     //    base-addr-1 = <0xC2 0xC2 0xC2 0xC2>;
     //    addr-prefix = <0xE7 0xC2 0xC3 0xC4 0xC5 0xC6 0xC7 0xC8>;
     //};
+
 };
 
 /*
