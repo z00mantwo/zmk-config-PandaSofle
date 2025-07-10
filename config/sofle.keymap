@@ -56,12 +56,13 @@
     trigger-period-ms = <16>;
 };
 
-/ {
-    wired_split {
-        compatible = "zmk,wired-split";
-        device = <&pro_micro_serial>;
-    };
-};
+// 
+// {
+//    wired_split {
+//        compatible = "zmk,wired-split";
+//        device = <&pro_micro_serial>;
+//    };
+//};
 
 / {
     behaviors {
