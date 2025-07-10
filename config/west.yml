@@ -20,6 +20,10 @@ manifest:
     #- name: nrfconnect
     #  url-base: https://github.com/nrfconnect    
 
+    # zmk-rgbled-widget 
+    - name: caksoylar  # <-- new entry
+      url-base: https://github.com/caksoylar
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -49,5 +53,9 @@ manifest:
     #  repo-path: sdk-nrfxlib
     #  path: nrfxlib
 
+    - name: zmk-rgbled-widget  # <-- new entry
+      remote: caksoylar
+      revision: main
+      
   self:
     path: config
