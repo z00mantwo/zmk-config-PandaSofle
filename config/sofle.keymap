@@ -61,7 +61,8 @@
 / {
     wired_split {
         compatible = "zmk,wired-split";
-        device = <&uart0>;
+        //device = <&uart0>;
+        device = <&xiao_serial>;
     };
 };
 
