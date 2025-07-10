@@ -12,3 +12,4 @@ https://www.aliexpress.us/item/3256807786069606.html
 ZMK addons for nice!view display
 https://github.com/PandaKBLab/zmk-for-keyboards/blob/zmk-for-corne/config/west.yml
 
+<img alt="keymap" width="100%" src="./keymap-drawer/sofle.svg">
