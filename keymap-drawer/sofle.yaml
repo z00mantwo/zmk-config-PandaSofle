@@ -230,11 +230,11 @@ layers:
   - PASTE
   - RGB TOG
   - ''
-  - KP DOT
+  - KP 0
   - KP 1
   - KP 2
   - KP 3
-  - {t: ▽, type: trans}
+  - KP DOT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
