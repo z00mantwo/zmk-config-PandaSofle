@@ -14,6 +14,19 @@ manifest:
     - name: m165437 #new entry
       url-base: https://github.com/M165437 #new entry  
 
+    # ZMK Layer Status
+    # https://github.com/maatthc/zmk-feature-appcompanion
+    # used with Keyboard Layers App Companion
+    # https://github.com/maatthc/keyboard_layers_app_companion
+    - name: maatthc
+      url-base: https://github.com/maatthc
+
+      
+    # ZMK Feature: Charge Indicator
+    # https://github.com/4mplelab/zmk-feature-charge-indicator
+    #- name: 4mplelab
+    #url-base: https://github.com/4mplelab
+      
     # https://github.com/badjeff/zmk-feature-split-esb
     #- name: badjeff
     #  url-base: https://github.com/badjeff
@@ -40,6 +53,27 @@ manifest:
       remote: m165437 #new entry
       revision: main #new entry
 
+    # ZMK Feature: Charge Indicator
+    #- name: zmk-feature-charge-indicator
+    #  remote: 4mplelab
+    #  revision: main
+
+    # ZMK Layer Status
+    # https://github.com/maatthc/zmk-feature-appcompanion
+    # used with Keyboard Layers App Companion
+    # https://github.com/maatthc/keyboard_layers_app_companion
+    - name: zmk-feature-appcompanion
+      remote: maatthc
+      revision: main
+
+    # zmk-feature-scaling is a ZMK input processor that evaluates a configurable acceleration curve 
+    # on frame-based pointer input while preserving the resulting direction vector. Trackball?
+    # https://github.com/iwk7273/zmk-feature-scaling
+
+    # ZMK Feature: XY Clipper
+    # This is a ZMK input processor module to clip relative XY movement deltas from sensors like trackballs or optical sensors.
+    # https://github.com/iwk7273/zmk-feature-xy_clipper
+    
     # ZMK ESB Split Transport
     # https://github.com/badjeff/zmk-feature-split-esb
     #- name: zmk-feature-split-esb
