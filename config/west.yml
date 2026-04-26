@@ -33,8 +33,8 @@ manifest:
     # https://github.com/maatthc/zmk-feature-appcompanion
     # used with Keyboard Layers App Companion
     # https://github.com/maatthc/keyboard_layers_app_companion
-    #- name: maatthc
-    #  url-base: https://github.com/maatthc
+    - name: maatthc
+      url-base: https://github.com/maatthc
 
   projects:
     - name: zmk
@@ -90,9 +90,9 @@ manifest:
     # https://github.com/maatthc/zmk-feature-appcompanion
     # used with Keyboard Layers App Companion
     # https://github.com/maatthc/keyboard_layers_app_companion
-    #- name: zmk-feature-appcompanion
-    #  remote: maatthc
-    #  revision: main
+    - name: zmk-feature-appcompanion
+      remote: maatthc
+      revision: main
 
   self:
     path: config
