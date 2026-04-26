@@ -14,14 +14,6 @@ manifest:
     - name: m165437 #new entry
       url-base: https://github.com/M165437 #new entry  
 
-    # ZMK Layer Status
-    # https://github.com/maatthc/zmk-feature-appcompanion
-    # used with Keyboard Layers App Companion
-    # https://github.com/maatthc/keyboard_layers_app_companion
-    - name: maatthc
-      url-base: https://github.com/maatthc
-
-      
     # ZMK Feature: Charge Indicator
     # https://github.com/4mplelab/zmk-feature-charge-indicator
     #- name: 4mplelab
@@ -36,6 +28,13 @@ manifest:
     # zmk-rgbled-widget 
     - name: caksoylar  # <-- new entry
       url-base: https://github.com/caksoylar
+
+    # ZMK Layer Status
+    # https://github.com/maatthc/zmk-feature-appcompanion
+    # used with Keyboard Layers App Companion
+    # https://github.com/maatthc/keyboard_layers_app_companion
+    - name: maatthc
+      url-base: https://github.com/maatthc
 
   projects:
     - name: zmk
@@ -57,14 +56,6 @@ manifest:
     #- name: zmk-feature-charge-indicator
     #  remote: 4mplelab
     #  revision: main
-
-    # ZMK Layer Status
-    # https://github.com/maatthc/zmk-feature-appcompanion
-    # used with Keyboard Layers App Companion
-    # https://github.com/maatthc/keyboard_layers_app_companion
-    - name: zmk-feature-appcompanion
-      remote: maatthc
-      revision: main
 
     # zmk-feature-scaling is a ZMK input processor that evaluates a configurable acceleration curve 
     # on frame-based pointer input while preserving the resulting direction vector. Trackball?
@@ -92,6 +83,14 @@ manifest:
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
       revision: main
-      
+
+    # ZMK Layer Status
+    # https://github.com/maatthc/zmk-feature-appcompanion
+    # used with Keyboard Layers App Companion
+    # https://github.com/maatthc/keyboard_layers_app_companion
+    - name: zmk-feature-appcompanion
+      remote: maatthc
+      revision: main
+
   self:
     path: config
