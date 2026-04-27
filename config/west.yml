@@ -107,12 +107,12 @@ manifest:
     # It is especially useful when learning complex multi-layer layouts or using boards with missing legends. 
     # The overlay updates instantly when layers change, so the view always matches your firmware state. 
     # https://github.com/srwi/keypeek
-    #- name: zmk-raw-hid # <-- Raw HID module
-    #  remote: zzeneg
-    #  revision: main
-    #- name: zmk-keypeek-layer-notifier # <-- KeyPeek module
-    #  remote: srwi
-    #  revision: master
+    - name: zmk-raw-hid # <-- Raw HID module
+      remote: zzeneg
+      revision: main
+    - name: zmk-keypeek-layer-notifier # <-- KeyPeek module
+      remote: srwi
+      revision: master
 
   self:
     path: config
