@@ -32,34 +32,42 @@ include:
   #
   - board: nice_nano@2.0.0//zmk
   #- board: nice_nano_v2
-    shield: sofle_left nice_view_adapter nice_view raw_hid_adapter 
+    shield: sofle_left nice_view_adapter nice_view 
+    #raw_hid_adapter 
     snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
   - board: nice_nano@2.0.0//zmk
   #- board: nice_nano_v2
-    shield: sofle_right nice_view_adapter nice_view raw_hid_adapter 
+    shield: sofle_right nice_view_adapter nice_view 
+    #raw_hid_adapter 
   #
   #
   - board: nice_nano@2.0.0//zmk
   #- board: nice_nano_v2
-    shield: sofle_left nice_view_adapter nice_view_gem raw_hid_adapter
+    shield: sofle_left nice_view_adapter nice_view_gem 
+    #raw_hid_adapter
     snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
   - board: nice_nano@2.0.0//zmk
   #- board: nice_nano_v2
-    shield: sofle_right nice_view_adapter nice_view_gem raw_hid_adapter 
+    shield: sofle_right nice_view_adapter nice_view_gem 
+    #raw_hid_adapter 
   #
   #
   - board: nice_nano@2.0.0//zmk
   #- board: nice_nano_v2
-    shield: sofle_left nice_view_adapter nice_view raw_hid_adapter
+    shield: sofle_left nice_view_adapter nice_view 
+    #raw_hid_adapter
     snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN=y -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_LV_FONT_DEFAULT_MONTSERRAT_26=y -DCONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN=y -DCONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE=y
+    # -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_LV_FONT_DEFAULT_MONTSERRAT_26=y 
     artifact-name: sofle_left nice_view_adapter nice_view-nice_nano_v2-zmk-olddisplay
   - board: nice_nano@2.0.0//zmk
   #- board: nice_nano_v2
-    shield: sofle_right nice_view_adapter nice_view raw_hid_adapter 
-    cmake-args: -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN=y -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_LV_FONT_DEFAULT_MONTSERRAT_26=y -DCONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE=y 
+    shield: sofle_right nice_view_adapter nice_view 
+    #raw_hid_adapter 
+    cmake-args: -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN=y -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE=y
+    # -DCONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_26=y -DCONFIG_LV_FONT_DEFAULT_MONTSERRAT_26=y 
     artifact-name: sofle_right nice_view_adapter nice_view-nice_nano_v2-zmk-olddisplay
   #
   #
